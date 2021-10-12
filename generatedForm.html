@@ -1,0 +1,28 @@
+<form name="Название формы" postmessage="Сообщение в случае успешного заполнения формы">
+<p>Произвольный текст наполнителя</p>
+<label>CheckBox1</label>
+<input type="checkbox" class="css-class" name="checkbox1" data-validationRule="text"placeholder="placeholder"/>
+<label>CheckBox2</label>
+<input type="checkbox" class="css-class" name="checkbox2" data-validationRule="text"placeholder="placeholder"required checked />
+<label>Поле для ввода текста</label>
+<input type="text" class="css-class" value="" name="text-input" data-validationRule="text"placeholder="Введите ваш текст"required />
+<label>Поле для ввода email</label>
+<input type="text" class="css-class" value="" name="text-input" data-validationRule="email"placeholder="Введите ваш email"required />
+<label>Список</label>
+<select class="css-class" value="" name="select" data-validationRule="text"placeholder="placeholder"required ><option value="one" selected>Первый</option>
+<option value="two" >Второй</option>
+<option value="three" >Третий</option>
+</select>
+
+<label>radioButton</label>
+<label>Radio-кнопка 1</label>
+<input type="radio" value="rad1" class="css-class" name="radioButton" data-validationRule="email"placeholder="placeholder"required />
+<label>Radio-кнопка 2</label>
+<input type="radio" value="rad2" class="css-class" name="radioButton" data-validationRule="email"placeholder="placeholder"checked required />
+<label>Radio-кнопка 3</label>
+<input type="radio" value="rad3" class="css-class" name="radioButton" data-validationRule="email"placeholder="placeholder"required />
+
+<label>Поле для ввода большого текста</label>
+<textarea class="css-class" value="" name="textarea" data-validationRule="text"placeholder="Введите большой текст"required ></textarea>
+<button class="button-class">Отправить</button>
+</form>
