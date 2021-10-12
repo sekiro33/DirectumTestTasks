@@ -12,15 +12,8 @@ namespace FormGenerator
             try
             {
                 var root = JsonSerializer.Deserialize<RootObject>(File.ReadAllText(args[0]));
-                string path;
-
-                if (args.Length != 1)
-                    path = args[1];
-                else
-                    path = Directory.GetParent(args[0]) + "\\generatedForm.html";
-
+                string path = Directory.GetParent(args[0]) + "\\generatedForm.html"; 
                 File.WriteAllText(path, Generator.GenerateForm(root));
-
                 Console.WriteLine("Успешно!");
                 Console.WriteLine("Сгенерированная форма: " + path);
                 Console.ReadKey();
@@ -38,8 +31,8 @@ namespace FormGenerator
                 return;
             }
             catch (SystemException ex)
-            { 
-                Console.WriteLine("Отсутствуют аргументы для запуска");
+            {
+                Console.WriteLine(ex.Message);
                 Console.ReadKey();
                 return;
             }
