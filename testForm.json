@@ -1,0 +1,162 @@
+{
+"form": {
+"name": "Название формы",
+"postmessage": "Сообщение в случае успешного заполнения формы",
+"items": [
+
+{
+  "type": "filler",
+  "attributes": {
+	"message": "Произвольный текст наполнителя"
+  }
+}, 
+
+{
+  "type": "checkbox",
+  "attributes": {
+	"name": "checkbox1",
+	"placeholder": "placeholder",
+	"required": false,
+	"label": "CheckBox1",
+	"class": "css-class",
+	"validationRules": [{
+	  "type": "text"
+	}],
+	"checked": false,
+	"disabled": false
+  }
+},
+
+{
+  "type": "checkbox",
+  "attributes": {
+	"name": "checkbox2",
+	"placeholder": "placeholder",
+	"required": true,
+	"label": "CheckBox2",
+	"class": "css-class",
+	"validationRules": [{
+	  "type": "text"
+	}],
+	"checked": true,
+	"disabled": false
+  }
+},
+
+{
+  "type": "text",
+  "attributes": {
+	"name": "text-input",
+	"placeholder": "Введите ваш текст",
+	"required": true,
+	"value": "",
+	"label": "Поле для ввода текста",
+	"class": "css-class",
+	"validationRules": [{
+	  "type": "text"
+	}],
+	"disabled": false
+  }
+}, 
+
+{
+  "type": "text",
+  "attributes": {
+	"name": "text-input",
+	"placeholder": "Введите ваш email",
+	"required": true,
+	"value": "",
+	"label": "Поле для ввода email",
+	"class": "css-class",
+	"validationRules": [{
+	  "type": "email"
+	}],
+	"disabled": false
+  }
+}, 
+
+{
+	"type": "select",
+	"attributes": {
+		"name": "select",
+		"placeholder": "placeholder",
+		"required": true,
+		"value": "",
+		"label": "Список",
+		"class": "css-class",
+		"validationRules": [{
+		"type": "text"
+		}],
+		"options": [{
+			"value": "one",
+			"text": "Первый",
+			"selected": true
+		}, {
+			"value": "two",
+			"text": "Второй",
+			"selected": false
+		}, {
+			"value": "three",
+			"text": "Третий",
+			"selected": false
+		}],
+		"disabled": false
+  }
+}, 
+
+{
+	"type": "radio",
+	"attributes": {
+		"name": "radioButton",
+		"placeholder": "placeholder",
+		"required": true,
+		"value": "",
+		"label": "radioButton",
+		"class": "css-class",
+		"validationRules": [{
+			"type": "email"
+		}],
+		"disabled": false,
+		"items": [{
+			"value": "rad1",
+			"label": "Radio-кнопка 1",
+			"checked": false
+		}, {
+			"value": "rad2",
+			"label": "Radio-кнопка 2",
+			"checked": true
+		}, {
+			"value": "rad3",
+			"label": "Radio-кнопка 3",
+			"checked": false
+		}]
+	}
+},
+
+{
+  "type": "textarea",
+  "attributes": {
+	"name": "textarea",
+	"placeholder": "Введите большой текст",
+	"required": true,
+	"value": "",
+	"label": "Поле для ввода большого текста",
+	"class": "css-class",
+	"validationRules": [{
+	  "type": "text"
+	}],
+	"disabled": false
+  }
+},
+
+{
+	"type": "button",
+	"attributes": {
+		"class": "button-class",
+		"text": "Отправить"
+	}
+} 
+
+]
+}
+}
